@@ -1,0 +1,12 @@
+#JavaEE
+/bin
+/test-output
+/config/
+/dist/
+/target/
+#/.settings
+#/.settings/
+#/.settings/*
+*.log
+logs.*
+logs
