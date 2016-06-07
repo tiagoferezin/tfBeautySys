@@ -3,10 +3,11 @@
 /test-output
 /config/
 /dist/
+#pom.*
 /target/
-#/.settings
-#/.settings/
-#/.settings/*
+/.settings
+/.settings/
+/.settings/*
 *.log
 logs.*
 logs
