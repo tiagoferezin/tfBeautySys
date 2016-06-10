@@ -40,6 +40,8 @@ public class Usuario extends AEntity {
 
 	@Column(nullable = false)
 	private String salt;
+	
+	private String email;
 
 	@Column(nullable = false)
 	private Calendar dataContratacao;
@@ -50,6 +52,14 @@ public class Usuario extends AEntity {
 	private Calendar dataDesativacao;
 
 	public Usuario() {
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getSalt() {
@@ -128,4 +138,11 @@ public class Usuario extends AEntity {
 		this.dataDesativacao = dataDesativacao;
 	}
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.nomeCompleto + "(" + this.email + ")";
+
+	}
+	
 }
